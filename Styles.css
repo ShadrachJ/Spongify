@@ -2,3 +2,6 @@ body{
 	background-image: url("memebob.jpg");
 	color: black;
 }
+.textfield{
+	border-radius: 5px;
+}
