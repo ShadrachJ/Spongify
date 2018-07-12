@@ -5,3 +5,6 @@ body{
 .textfield{
 	border-radius: 5px;
 }
+#pre:hover{
+	background-color: blue;	
+}
