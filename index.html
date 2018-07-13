@@ -13,9 +13,16 @@
 
 <body>
   <header>Spongify me up, friendo</header>
-  <label for="Pre">Pre meme text: </label><input type ="textfield" id="Pre">
+  <label for="Pre">Pre meme text: </label><input type ="textfield" id="Pre" onKeyUp= "firstLetterUppercase(Pre.value)">
   <label for="Post">Post meme text: </label><input type="textfield" id="Post">
-  <p> here i am testing whitespace </p>
-  <p> again i am testing whitespace</p>
+  <script>
+     function firstLetterUppercase (input) {
+	var res = "";
+	for (i=0; i < input.length; i++) {
+     res += i % 2 == 0 ? input.charAt(i).toUpperCase() : input.charAt(i);
+	}
+   Post.value = res;  
+}
+</script>
 </body>
 </html>
