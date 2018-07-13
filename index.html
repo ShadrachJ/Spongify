@@ -1,32 +1,56 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Spongify</title>
   <meta name="description" content="Spongify">
   <meta name="author" content="Shadrach">
 </head>
+	
+	
+	
+	
+<!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	
 <style>
 	header{
 	background-color: gray;
 	opacity: .9;
 	}
         body{
-	background-image: url("memebob.jpg");
+	background: linear-gradient(square, #ffff66, black,#00ccff);
 	color: black;
 	}
         textarea{
 	top:50px;
-	border-radius: 5px;
+	border-radius: 10px;
 	}
-</style>   
+</style>  
+	
+	
+CSS STYLING ENDS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
+	
+	
+	
+	
+	
+<!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+
 <body>
   <header>Spongify me up, friendo</header>
-  <label for="Pre">Pre meme text: </label><textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)"></textarea>
-	<label for="Post">Post meme text: </label><textarea rows="4" cols="70" id="Post"></textarea>
-  <script>
+  <label for="Pre">Pre meme text: </label>
+	<textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)"></textarea>
+  <label for="Post">Post meme text: </label>
+	<textarea id="Post" rows="4" cols="70" ></textarea>
+
+
+MAIN HTML BODY ENDS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	
+	
+	
+<!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+
+<script>
      function firstLetterUppercase (input) {
 	var res = "";
 	for (i=0; i < input.length; i++) {
@@ -35,5 +59,7 @@
    Post.value = res;  
 }
 </script>
+
+JAVASCRIPT FUNCTIONS END HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </body>
 </html>
