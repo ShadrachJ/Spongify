@@ -13,6 +13,28 @@
 <!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 	
 <style>
+	ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+        }
+
+        li {
+         float: left;
+        }
+
+        li a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+        }
+        li a:hover {
+         background-color: #111;
+        }
 	header{
 	 background-color: gray;
 	 opacity: .9;
@@ -30,12 +52,17 @@
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 
 <body>
+	<ul>
+		<li><a href="index.html">Home</a>
+		<li><a href="freecodecamp.com" target="_blank">freecodecamp</a>
+	</ul>
+	<!--
   <header>Spongify me up, friendo</header>
   <label for="Pre">Pre meme text: </label>
 	<textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)"></textarea>
   <label for="Post">Post meme text: </label>
 	<textarea id="Post" rows="4" cols="70" ></textarea>
-	
+	-->
 	
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
