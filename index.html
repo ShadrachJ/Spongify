@@ -44,8 +44,19 @@
 	 color: black;
 	}
         textarea{
-	 top:50px;
 	 border-radius: 10px;
+	}
+	#Pre{
+	 float:left;
+	}
+	#Post{
+	 float:right;
+	}
+	.container{
+	 height: 800px;
+         width: 100%;
+	 background-color: black;
+	 opacity: .4;
 	}
 </style>  
 	
@@ -56,13 +67,10 @@
 		<li><a href="index.html">Home</a>
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a>
 	</ul>
-	<!--
-  <header>Spongify me up, friendo</header>
-  <label for="Pre">Pre meme text: </label>
-	<textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)"></textarea>
-  <label for="Post">Post meme text: </label>
-	<textarea id="Post" rows="4" cols="70" ></textarea>
-	-->
+	<div class="container">
+	<textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)" placeholder="Pre meme text here"></textarea>
+	<textarea id="Post" rows="4" cols="70" placeholder="Post meme text here"></textarea>
+	</div>
 	
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
