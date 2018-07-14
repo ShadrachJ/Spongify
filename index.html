@@ -104,8 +104,12 @@
 	for (i=0; i < input.length; i++) {
      res += i % 2 == 0 ? input.charAt(i).toUpperCase() : input.charAt(i);
 	}
-   meme.value = res;  
-}
+     meme.value = res;  
+    }
+    function playMusic(){
+	var snd = new Audio("gary.wav");    
+	snd.play();
+    }
 </script>
 
 </body>
