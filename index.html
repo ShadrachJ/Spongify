@@ -34,6 +34,8 @@
          text-decoration: none;
          font-family: 'Gaegu', cursive;
          font-size: 20px;
+         border-style: solid;
+         border-width:0px 4px 0px 0px;
         }
         li a:hover {
          background-color: #fffe1e;
@@ -52,20 +54,22 @@
 	}
 	#Pre{
 	 float:left;
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-         resize:none;
-         outline:none;
-         margin-top:2%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      resize:none;
+      outline:none;
+      margin-top:2%;
+      margin-left:2%;
 	}
 	#Post{
 	 float:right;
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-         resize:none;
-         outline:none;
-         margin-top:2%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      resize:none;
+      outline:none;
+      margin-top:2%;
+      margin-right:2%;
 	}
-       .container{
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	.container{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	 margin-top: 5px;
 	 height: 900px;
          width: 100%;
@@ -84,7 +88,6 @@
 	</ul>
 	<div class="container">
 	<textarea id="Pre" rows="4" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)" placeholder="Pre meme text here"></textarea>
-	<textarea id="Post" rows="4" cols="70" placeholder="Post meme text here"></textarea>
 	</div>
 	
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -95,7 +98,7 @@
 	for (i=0; i < input.length; i++) {
      res += i % 2 == 0 ? input.charAt(i).toUpperCase() : input.charAt(i);
 	}
-   Post.value = res;  
+   Pre.value = res;  
 }
 </script>
 
