@@ -93,7 +93,14 @@
 	</ul>
 	
     <div class="subcont">
-    <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats. Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large) the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files could be stored on a single repository, and users would need to download nothing. <textarea id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Pre meme text here"></textarea> </p>
+    <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided 
+       by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats.
+       Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large)
+       the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. 
+       This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files 
+       could be stored on a single repository, and users would need to download nothing. 
+         <textarea id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Pre meme text here" onfocus="playMusic()"></textarea> 
+    </p>
     </div>
 	
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
