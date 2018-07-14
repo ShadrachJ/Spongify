@@ -49,51 +49,42 @@
 	 /*background: linear-gradient(to right, rgba(93, 122,217,.3),rgba(0,0,0,.4),rgba(247,245,119,.8),rgba(247,245,119,.8), rgba(247, 245, 119,1));*/
 	 color: black;
 	}
-        textarea{
-	 border-radius: 10px;
-	}
-	#Pre{
-	 float:left;
+	#meme{
+	  float:right;
+      width:99.6%;
+      margin-top:30px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius:10px;
       resize:none;
       outline:none;
-      margin-top:2%;
-      margin-left:2%;
       background: url("https://i.kym-cdn.com/entries/icons/mobile/000/022/940/mockingspongebobbb.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-color: white;
 	}
-	#Post{
-	 float:right;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      resize:none;
-      outline:none;
-      margin-top:2%;
-      margin-right:2%;
-	}
 	.container{
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	 margin-top: 5px;
+     margin-right:10px;
 	 height: 900px;
          width: 100%;
 	 background-color: #ff8e1e;
 	 opacity: .4;
 	}
-     .right{
-       float:right;
+     .subcont{
        text-align:left;
-       margin-top:20px;
+       margin-top:10px;
        margin-right:5px;
+       margin-left:5px;
        padding: 0 1px 2px 2px;
-       width: 45%;
-       height:67%;
+       width: 97%;
+       height:97%;
        color:black;
        background-color:white;
        opacity: .8;
        box-shadow: 5px 10px 7px #000000;
        border-radius:10px;
-     }
+      }
 </style>  
 	
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
@@ -104,9 +95,9 @@
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a>
 	</ul>
 	<div class="container">
-	<textarea id="Pre" rows="40" cols="70" onKeyUp= "firstLetterUppercase(Pre.value)" placeholder="Pre meme text here"></textarea>
-    <div class="right">
-    <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats. Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large) the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files could be stored on a single repository, and users would need to download nothing.</p>
+	
+    <div class="subcont">
+    <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats. Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large) the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files could be stored on a single repository, and users would need to download nothing. <textarea id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Pre meme text here"></textarea> </p>
     </div>
 	</div>
 	
@@ -118,7 +109,7 @@
 	for (i=0; i < input.length; i++) {
      res += i % 2 == 0 ? input.charAt(i).toUpperCase() : input.charAt(i);
 	}
-   Pre.value = res;  
+   meme.value = res;  
 }
 </script>
 
