@@ -81,27 +81,105 @@
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
 	</ul><br>
  <div class="grid-container">
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>  
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>  
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>
-  <div class="grid-item"><li a href=""></li></div>  
+  <div class="grid-item"><li><a href="" id="drums" onClick="playDarkDrums()"></li>Dark Drums</div>
+  <div class="grid-item"><li><a href="" id="electroDoot" onClick="playElectroDoot()">Electro Doot</li></div>
+  <div class="grid-item"><li><a href="" id="dootyPiano" onClick="playDootyPiano()"></li>Dooty Piano</div>  
+  <div class="grid-item"><li><a href="" id="trapFlute" onClick="playTrapFlute()"></li>Trap Flute</div>
+  <div class="grid-item"><li><a href="" id="synthPiano" onClick="playSynthPiano()"></li>Synth Piano</div>
+  <div class="grid-item"><li><a href="" id="technoPiano" onClick="playTechnoPiano()"></li>Techno Piano</div>  
+  <div class="grid-item"><li><a href="" id=technoStrings onClick="playTechnoStrings()"></li>Techno String</div>
+  <div class="grid-item"><li><a href=""></li>eh</div>
+  <div class="grid-item"><li><a href=""></li>eh</div>  
 </div>
-   
-   
-    
-  
-   
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <script>
-    function playMusic(){
-	var snd = new Audio("gary.wav");    
-	snd.play();
+	var dd = new Audio("drums dark.wav");    
+	var ed = new Audio("electro doot.wav");
+	var dp = new Audio("dooty piano.wav");
+	var tf = new Audio("trap flute.wav");
+	var sp = new Audio("synth piano.wav");
+	var tp = new Audio("techno piano.wav");
+	var ts = new Audio("techno strings.wav");
+	
+	dd.loop= true;
+	ed.loop = true;
+	dp.loop=true;
+	tf.loop=true;
+	sp.loop=true;
+	tp.loop=true;
+	ts.loop=true;
+	
+	var ddc = 0;
+	var edc = 0;
+	var dpc = 0;
+	var tfc = 0;
+	var spc = 0;
+	var tpc = 0;
+	var tsc = 0;
+	
+    function playDarkDrums(){
+       if(ddc == 0){
+	ddc++;
+	dd.currentTime = 0;
+	dd.play();}
+	else{
+	ddc--;
+	dd.pause();}
+    }
+	function playElectroDoot(){ 
+	if(edc== 0){
+	edc++;
+	ed.currentTime = 0;
+	ed.play();}
+	else{
+	edc--;
+	ed.pause();}
+    }
+	function playDootyPiano(){ 
+	if(dpc == 0){
+	dpc++;
+	dp.currentTime = 0;
+	dp.play();}
+	else{
+	dpc--;
+	dp.pause();}
+    }
+	function playTrapFlute(){ 
+	if(tfc == 0){
+	tfc++;
+	tf.currentTime = 0;
+	tf.play();}
+	else{
+	tfc--;
+	tf.pause();}
+    }
+	function playSynthPiano(){ 
+	if(spc == 0){
+	spc++;
+	sp.currentTime = 0;
+	sp.play();}
+	else{
+	spc--;
+	sp.pause();}
+    }
+	function playTechnoPiano(){
+	if(tpc == 0){
+	tpc++;
+	tp.currentTime = 0;
+	tp.play();}
+	else{
+	tpc--;
+	tp.pause();}
+    }
+	function playTechnoStrings(){
+	if(tsc == 0){
+	tsc++;
+	ts.currentTime = 0;
+	ts.play();}
+	else{
+	tsc--;
+	ts.pause();}
     }
 </script>
 
