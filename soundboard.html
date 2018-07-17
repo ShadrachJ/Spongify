@@ -69,18 +69,33 @@
          background-color: #fffe1e;
          color:#1e90ff;
         }
+	 .container {
+        display: grid;
+        grid-template-areas:
+       'header header header '
+       'header header header '
+       'main main main '
+       'main main main '
+       'main main main ';
+        grid-gap: 10px;
+        padding: 10px;
+}
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
 	
 </style>  
 	
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 
 <body>
-	<ul>
+<div class="container">
+	<ul class="item1">
 		<li><a href="https://spongify.club">Home</a></li>
 		<li><a href="soundboard.html">Sound Board</a></li>
 		<li><a href="real.html">Shad</a></li>
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
-	</ul><br>
+	</ul>
+ <div class="item3">
  <div class="grid-container">
   <div class="grid-item"><button id="drums" onClick="playDarkDrums()">Dark Drums</button></div>
   <div class="grid-item"><button id="electroDoot" onClick="playElectroDoot()">Electro Doot</button></div>
@@ -91,6 +106,8 @@
   <div class="grid-item"><button id="technoStrings" onClick="playTechnoStrings()">Techno String</button></div>
   <div class="grid-item"><button id="huh" onClick="playHuh()">HUH</button></div>
   <div class="grid-item">eh</div>  
+  </div>
+</div>
 </div>
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
