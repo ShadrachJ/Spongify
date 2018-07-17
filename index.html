@@ -140,6 +140,7 @@
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <script>
+    var snd = new Audio("gary.wav");    
      function firstLetterUppercase (input) {
 	var res = "";
 	for (i=0; i < input.length; i++) {
@@ -148,8 +149,8 @@
      meme.value = res;  
     }
     function playMusic(){
-	var snd = new Audio("gary.wav");    
-	snd.load();
+	snd.currentTime = 0;
+	snd.play();
     }
 </script>
 
