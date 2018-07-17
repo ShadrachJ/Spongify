@@ -130,7 +130,7 @@
        </p>
     </div>
     <div class="item2">
-         <textarea  id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Pre meme text here" onfocus="playMusic()"></textarea> 
+         <textarea  id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Text will change as you type"></textarea> 
     </div>
     <div class="item4">
     <a class="twitter-timeline" data-width="500" data-height="100%" href="https://twitter.com/SpongeBob?ref_src=twsrc%5Etfw">Tweets by SpongeBob</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -140,7 +140,7 @@
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <script>
-    var snd = new Audio("bensound-allthat.mp3");    
+      
      function firstLetterUppercase (input) {
 	var res = "";
 	for (i=0; i < input.length; i++) {
@@ -148,10 +148,7 @@
 	}
      meme.value = res;  
     }
-    function playMusic(){
-	snd.currentTime = 0;
-	snd.play();
-    }
+    
 </script>
 
 </body>
