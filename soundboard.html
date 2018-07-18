@@ -105,7 +105,7 @@
   <div class="grid-item"><button id="technoPiano" onClick="playTechnoPiano()">Techno Piano</button></div>  
   <div class="grid-item"><button id="technoStrings" onClick="playTechnoStrings()">Techno String</button></div>
   <div class="grid-item"><button id="huh" onClick="playHuh()">HUH</button></div>
-  <div class="grid-item"><button id="pretty" onClick="playPretty()">hm...</button></div>  
+  <div class="grid-item">blank</div>  
   </div>
 </div>
 </div>
@@ -120,7 +120,6 @@
 	var tp = new Audio("techno piano.wav");
 	var ts = new Audio("techno strings.wav");
 	var huh = new Audio("huh.wav");
-	var p = new Audio("pretty.wav");
 	
 	dd.loop= true;
 	ed.loop = true;
@@ -130,7 +129,6 @@
 	tp.loop=true;
 	ts.loop=true;
 	huh.loop=false;
-	p.loop=true;
 	
 	var ddc = 0;
 	var edc = 0;
@@ -139,7 +137,6 @@
 	var spc = 0;
 	var tpc = 0;
 	var tsc = 0;
-	var pc = 0;
 	
     function playDarkDrums(){
        if(ddc == 0){
@@ -208,15 +205,7 @@
 	huh.currentTime=0;	
 	huh.play();
 	}
-	 function playPretty(){
-       if(pc == 0){
-	pc++;
-	p.currentTime = 0;
-	p.play();}
-	else{
-	pc--;
-	p.pause();}
-    }
+	
 </script>
 
 </body>
