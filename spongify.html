@@ -95,7 +95,7 @@
 }
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-.item3 { grid-area: main; background-color:rgba(250, 251, 255,.95);}
+.item3 { grid-area: main; background-color:rgba(250, 251, 255,.95); visibility: hidden;}
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
      
@@ -111,9 +111,10 @@
 		<li><a href="soundboard.html">Sound Board</a></li>
 		<li><a href="spongify.html">Spongify</a></li>
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
+		<li><a href="#" onClick="aboutSee()">About</a></li>
 	</ul>
     </div>
-    <div class="item3">
+    <div class="item3" id = "about">
     <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided 
        by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats.
        Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large)
@@ -133,7 +134,7 @@
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <script>
-      
+      var visCheck = 0;
      function firstLetterUppercase (input) {
 	var res = "";
 	for (i=0; i < input.length; i++) {
@@ -142,6 +143,16 @@
      meme.value = res;  
     }
     
+    function aboutSee(){
+    if(visCheck == 0){
+      visCheck++;
+      document.getElementById("about").style.visibility = "visible";
+      }
+    else{
+      visCheck--;
+      document.getElementById("about").style.visibility = "hidden";
+      }
+    }
 </script>
 
 </body>
