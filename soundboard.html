@@ -6,13 +6,7 @@
   <meta name="description" content="Spongify">
   <meta name="author" content="Shadrach">
   <link rel="icon" href="https://image.flaticon.com/icons/png/512/280/280790.png">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-5723324442472545",
-      enable_page_level_ads: true
-    });
-  </script>
+  
 </head>
 	
 	
@@ -21,54 +15,54 @@
 <!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 	
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-	html{
-         background-color: #fffe1e;
-         font-family: 'Montserrat', cursive;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+	      html{
+         background-image:url("https://images.unsplash.com/photo-1531950769935-13a6e50e10e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d37bcb297da5e61eab45c562813dd195&auto=format&fit=crop&w=1350&q=80");
+         font-family: 'Roboto', sans-serif;
+         color: white;
         }
         .grid-container {
   display: grid;
   height:100%;
   width:98.6%;
   grid-template-columns: auto auto auto ;
-  background-color: #2196F3;
   padding: 10px;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
   height:90px;
+  border:none;
 }
-	ul {
+	     ul {
          list-style-type: none;
          margin: 0;
          padding: 2px;
          overflow: hidden;
-         background-color: #1e90ff;
+         background-color: white;
          border-radius:10px;
         }
         li {
-	 border-radius:10px;
          float: left;
+	 border-radius:10px;
         }
         li a {
-	 border-radius: 10px;
          display: block;
-         color: white;
+         color: #2A6376;
          text-align: center;
          padding: 14px 16px;
          text-decoration: none;
          font-size: 20px;
          border-style: solid;
          border-width:0px 4px 0px 0px;
+	 border-radius:10px;
         }
         li a:hover {
-         background-color: #fffe1e;
-         color:#1e90ff;
-        }
+         background-color: #2A6376;
+         color: white;
+         transition: .5s;
+	}
 	 .container {
         display: grid;
         grid-template-areas:
@@ -82,7 +76,21 @@
 }
 .item1 { grid-area: header; }
 .item3 { grid-area: main; }
-	
+.mBtn {
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  height:100%;
+  width:100%;
+  cursor: pointer;
+}
+.mBtn:hover{
+box-shadow: 5px 10px 18px #888888;
+transition: .5s;
+}
 </style>  
 	
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
@@ -97,14 +105,14 @@
 	</ul>
  <div class="item3">
  <div class="grid-container">
-  <div class="grid-item"><button id="drums" onClick="playDarkDrums()">Dark Drums</button></div>
-  <div class="grid-item"><button id="electroDoot" onClick="playElectroDoot()">Electro Doot</button></div>
-  <div class="grid-item"><button id="dootyPiano" onClick="playDootyPiano()">Dooty Piano</button></div>  
-  <div class="grid-item"><button id="trapFlute" onClick="playTrapFlute()">Trap Flute</button></div>
-  <div class="grid-item"><button id="synthPiano" onClick="playSynthPiano()">Synth Piano</button></div>
-  <div class="grid-item"><button id="technoPiano" onClick="playTechnoPiano()">Techno Piano</button></div>  
-  <div class="grid-item"><button id="technoStrings" onClick="playTechnoStrings()">Techno String</button></div>
-  <div class="grid-item"><button id="huh" onClick="playHuh()">HUH</button></div>
+  <div class="grid-item"><button  class = "mBtn" id="drums" onClick="playDarkDrums()">Dark Drums</button></div>
+  <div class="grid-item"><button class = "mBtn" id="electroDoot" onClick="playElectroDoot()"><span>Electro Doot</span></button></div>
+  <div class="grid-item"><button class = "mBtn" id="dootyPiano" onClick="playDootyPiano()">Dooty Piano</button></div>  
+  <div class="grid-item"><button class = "mBtn" id="trapFlute" onClick="playTrapFlute()">Trap Flute</button></div>
+  <div class="grid-item"><button class = "mBtn" id="synthPiano" onClick="playSynthPiano()">Synth Piano</button></div>
+  <div class="grid-item"><button class = "mBtn" id="technoPiano" onClick="playTechnoPiano()">Techno Piano</button></div>  
+  <div class="grid-item"><button class = "mBtn" id="technoStrings" onClick="playTechnoStrings()">Techno String</button></div>
+  <div class="grid-item"><button class = "mBtn" id="huh" onClick="playHuh()">HUH</button></div>
   <div class="grid-item">blank</div>  
   </div>
 </div>
