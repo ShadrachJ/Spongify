@@ -6,13 +6,7 @@
   <meta name="description" content="Spongify">
   <meta name="author" content="Shadrach">
   <link rel="icon" href="https://image.flaticon.com/icons/png/512/280/280790.png">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-5723324442472545",
-      enable_page_level_ads: true
-    });
-  </script>
+  
 </head>
 	
 	
@@ -21,18 +15,18 @@
 <!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 	
 <style>
-        @import url('https://fonts.googleapis.com/css?family=Gaegu');
-	@import url('https://fonts.googleapis.com/css?family=Montserrat');
-	html{
+         @import url('https://fonts.googleapis.com/css?family=Roboto');
+        html{
          background-image:url("https://images.unsplash.com/photo-1531950769935-13a6e50e10e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d37bcb297da5e61eab45c562813dd195&auto=format&fit=crop&w=1350&q=80");
-         font-family: 'Montserrat', cursive;
+         font-family: 'Roboto', sans-serif;
+         color: white;
         }
 	ul {
          list-style-type: none;
          margin: 0;
          padding: 2px;
          overflow: hidden;
-         background-color: #2A6376;
+         background-color: white;
          border-radius:10px;
         }
         li {
@@ -41,7 +35,7 @@
         }
         li a {
          display: block;
-         color: white;
+         color: #2A6376;
          text-align: center;
          padding: 14px 16px;
          text-decoration: none;
@@ -51,51 +45,39 @@
 	 border-radius:10px;
         }
         li a:hover {
-         background-color: white;
-         color: #2A6376;
-        }
+         background-color: #2A6376;
+         color: white;
+	}
 	#meme{
           border-radius:10px;
           resize:none;
           outline:none;
           width:100%;
-	  font-family: 'Montserrat', cursive;
+	      font-family: 'Roboto', sans-serif;
 	}
-    @media only screen and (max-width: 800px) {
-    .item4 {
-        display:none;
-    }
-    .item3 {
-    	display:none;
-	    }
-}
-        .subcont{
-          text-align:left;
-          margin-top:10px;
-          margin-right:5px;
-          margin-left:5px;
-          padding: 0 1px 2px 2px;
-          
-          color:black;
-          background-color:white;
-          opacity: .8;
-          box-shadow: 5px 10px #ff8e1e;
-          border-radius:10px;
+       @media only screen and (max-width: 800px) {
+         .item4 {
+           display:none;
+          }
+         .item3 {
+    	   display:none;
+	      }
+          .item1 { grid-area: header; }
+          .item2 { grid-area: menu;}
        }
        .container {
-        display: grid;
-        grid-template-areas:
-       'header header header header header header'
-       'header header header header header header'
-       'main main main main main main'
-       'menu menu menu menu menu right'
-       'menu menu menu menu menu right';
-       grid-gap: 10px;
-       padding: 10px;
-}
+         display: grid;
+         grid-template-areas:
+        'header header header header header header header'
+        'header header header header header header header'
+        'menu menu menu menu . right right'
+        'menu menu menu menu . right right';
+        grid-gap: 10px;
+        padding: 10px;
+        }
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-.item3 { grid-area: main; background-color:rgba(250, 251, 255,.95); visibility: hidden;}
+.item3 { grid-area: main;}
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
      
@@ -111,47 +93,25 @@
 		<li><a href="soundboard.html">Sound Board</a></li>
 		<li><a href="spongify.html">Spongify</a></li>
 		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
-		<li><a href="#" onClick="aboutSee()">About</a></li>
 	</ul>
-    </div>
-    <div class="item3" id = "about">
-    <p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided 
-       by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats.
-       Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large)
-       the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. 
-       This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files 
-       could be stored on a single repository, and users would need to download nothing. 
-       </p>
     </div>
     <div class="item2">
          <textarea  id="meme" rows="40" cols="70" onKeyUp= "firstLetterUppercase(meme.value)" placeholder="Text will change as you type"></textarea> 
     </div>
     <div class="item4">
-    <a class="twitter-timeline" data-width="500" data-height="100%" href="https://twitter.com/SpongeBob?ref_src=twsrc%5Etfw">Tweets by SpongeBob</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="100%" data-height="100%" href="https://twitter.com/SpongeBob?ref_src=twsrc%5Etfw">Tweets by SpongeBob</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     </div>
 	
 <!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <script>
-      var visCheck = 0;
      function firstLetterUppercase (input) {
 	var res = "";
 	for (i=0; i < input.length; i++) {
      res += i % 2 == 0 ? input.charAt(i).toUpperCase() : input.charAt(i);
 	}
      meme.value = res;  
-    }
-    
-    function aboutSee(){
-    if(visCheck == 0){
-      visCheck++;
-      document.getElementById("about").style.visibility = "visible";
-      }
-    else{
-      visCheck--;
-      document.getElementById("about").style.visibility = "hidden";
-      }
     }
 </script>
 
