@@ -91,6 +91,8 @@
 box-shadow: 5px 10px 18px #888888;
 transition: .5s;
 }
+.mBtn:focus{
+outline:none;}
 </style>  
 	
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
@@ -150,64 +152,78 @@ transition: .5s;
        if(ddc == 0){
 	ddc++;
 	dd.currentTime = 0;
-	dd.play();}
+	dd.play();
+        document.getElementById("drums").style.border = "1px solid white";}
 	else{
 	ddc--;
-	dd.pause();}
+	dd.pause();
+	document.getElementById("drums").style.border = "none";}
     }
 	function playElectroDoot(){ 
 	if(edc== 0){
 	edc++;
 	ed.currentTime = 0;
-	ed.play();}
+	ed.play();
+	document.getElementById("electroDoot").style.border = "1px solid white";}
 	else{
 	edc--;
-	ed.pause();}
+	ed.pause();
+	document.getElementById("electroDoot").style.border = "none";}
     }
 	function playDootyPiano(){ 
 	if(dpc == 0){
 	dpc++;
 	dp.currentTime = 0;
-	dp.play();}
+	dp.play();
+	document.getElementById("dootyPiano").style.border = "1px solid white";}
 	else{
 	dpc--;
-	dp.pause();}
+	dp.pause();
+	document.getElementById("dootyPiano").style.border = "none";}
     }
 	function playTrapFlute(){ 
 	if(tfc == 0){
 	tfc++;
 	tf.currentTime = 0;
-	tf.play();}
+	tf.play();
+	document.getElementById("trapFlute").style.border = "1px solid white";}
 	else{
 	tfc--;
-	tf.pause();}
+	tf.pause();
+	document.getElementById("trapFlute").style.border = "none";}
     }
 	function playSynthPiano(){ 
 	if(spc == 0){
 	spc++;
 	sp.currentTime = 0;
-	sp.play();}
+	sp.play();
+	document.getElementById("synthPiano").style.border = "1px solid white";}
 	else{
 	spc--;
-	sp.pause();}
+	sp.pause();
+	document.getElementById("synthPiano").style.border = "none";}
     }
 	function playTechnoPiano(){
 	if(tpc == 0){
 	tpc++;
 	tp.currentTime = 0;
-	tp.play();}
+	tp.play();
+	document.getElementById("technoPiano").style.border = "1px solid white";}
 	else{
 	tpc--;
-	tp.pause();}
+	tp.pause();
+	document.getElementById("technoPiano").style.border = "none";}
     }
 	function playTechnoStrings(){
 	if(tsc == 0){
 	tsc++;
 	ts.currentTime = 0;
-	ts.play();}
+	ts.play();
+	document.getElementById("technoStrings").style.border = "1px solid white";}
 	else{
 	tsc--;
-	ts.pause();}
+	ts.pause();
+	document.getElementById("technoStrings").style.border = "none";}
     }
 	function playHuh(){
 	huh.currentTime=0;	
