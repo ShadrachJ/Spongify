@@ -32,33 +32,32 @@
   height:90px;
   border:none;
 }
-	     ul {
+	    ul {
          list-style-type: none;
          margin: 0;
          padding: 2px;
          overflow: hidden;
          background-color: white;
-         border-radius:10px;
+         border-radius: 10px;
         }
         li {
          float: left;
-	 border-radius:10px;
         }
         li a {
          display: block;
          color: #2A6376;
          text-align: center;
-         padding: 14px 16px;
+         padding: 14px ;
          text-decoration: none;
          font-size: 20px;
          border-style: solid;
          border-width:0px 4px 0px 0px;
-	 border-radius:10px;
         }
         li a:hover {
          background-color: #2A6376;
          color: white;
-         transition: .5s;
+         border-radius:10px;
+	 transition: .5s;
 	}
 	 .container {
         display: grid;
@@ -69,7 +68,7 @@
        'main main main '
        'main main main ';
         grid-gap: 10px;
-        padding: 10px;
+       
 }
 .item1 { grid-area: header; }
 .item3 { grid-area: main; }
@@ -111,8 +110,7 @@ outline:none;}
   <div class="grid-item"><button class = "mBtn" id="synthPiano" onClick="playSynthPiano()">Synth Piano</button></div>
   <div class="grid-item"><button class = "mBtn" id="technoPiano" onClick="playTechnoPiano()">Techno Piano</button></div>  
   <div class="grid-item"><button class = "mBtn" id="technoStrings" onClick="playTechnoStrings()">Techno String</button></div>
-  <div class="grid-item"><button class = "mBtn" id="huh" onClick="playHuh()">HUH</button></div>
-  <div class="grid-item">blank</div>  
+  <div class="grid-item"><button class = "mBtn" id="huh." onClick="playHuh()">Huh.</button></div> 
   </div>
 </div>
 </div>
@@ -135,7 +133,6 @@ outline:none;}
 	sp.loop=true;
 	tp.loop=true;
 	ts.loop=true;
-	huh.loop=false;
 	
 	var ddc = 0;
 	var edc = 0;
@@ -147,83 +144,97 @@ outline:none;}
 	
     function playDarkDrums(){
        if(ddc == 0){
-	ddc++;
-	dd.currentTime = 0;
-	dd.play();
-        document.getElementById("drums").style.border = "1px solid white";}
-	else{
-	ddc--;
-	dd.pause();
-	document.getElementById("drums").style.border = "none";}
+	    ddc++;
+	    dd.currentTime = 0;
+	    dd.play();
+        document.getElementById("drums").style.textShadow = "5px 5px 1px pink";
+        document.getElementById("drums").style.fontSize = "32px";}
+	  else{
+	    ddc--;
+	    dd.pause();
+	    document.getElementById("drums").style.textShadow = "none";
+        document.getElementById("drums").style.fontSize = "28px";}
     }
 	function playElectroDoot(){ 
 	if(edc== 0){
 	edc++;
 	ed.currentTime = 0;
 	ed.play();
-	document.getElementById("electroDoot").style.border = "1px solid white";}
+	document.getElementById("electroDoot").style.textShadow = "5px 5px 1px orange";
+    document.getElementById("electroDoot").style.fontSize = "32px";}
 	else{
 	edc--;
 	ed.pause();
-	document.getElementById("electroDoot").style.border = "none";}
+	document.getElementById("electroDoot").style.textShadow = "none";
+    document.getElementById("electroDoot").style.fontSize = "28px";}
     }
 	function playDootyPiano(){ 
 	if(dpc == 0){
 	dpc++;
 	dp.currentTime = 0;
 	dp.play();
-	document.getElementById("dootyPiano").style.border = "1px solid white";}
+	document.getElementById("dootyPiano").style.textShadow = "5px 5px 1px purple";
+    document.getElementById("dootyPiano").style.fontSize = "32px";}
 	else{
 	dpc--;
 	dp.pause();
-	document.getElementById("dootyPiano").style.border = "none";}
+	document.getElementById("dootyPiano").style.textShadow = "none";
+    document.getElementById("dootyPiano").style.fontSize = "28px";}
     }
 	function playTrapFlute(){ 
 	if(tfc == 0){
 	tfc++;
 	tf.currentTime = 0;
 	tf.play();
-	document.getElementById("trapFlute").style.border = "1px solid white";}
+	document.getElementById("trapFlute").style.textShadow = "5px 5px 1px yellow";
+    document.getElementById("trapFlute").style.fontSize = "32px";}
 	else{
 	tfc--;
 	tf.pause();
-	document.getElementById("trapFlute").style.border = "none";}
+	document.getElementById("trapFlute").style.textShadow = "none";
+    document.getElementById("trapFlute").style.fontSize = "28px";}
     }
 	function playSynthPiano(){ 
 	if(spc == 0){
 	spc++;
 	sp.currentTime = 0;
 	sp.play();
-	document.getElementById("synthPiano").style.border = "1px solid white";}
+	document.getElementById("synthPiano").style.textShadow = "5px 5px 1px green";
+    document.getElementById("synthPiano").style.fontSize = "32px";}
 	else{
 	spc--;
 	sp.pause();
-	document.getElementById("synthPiano").style.border = "none";}
+	document.getElementById("synthPiano").style.textShadow = "none";
+    document.getElementById("synthPiano").style.fontSize = "28px";}
     }
 	function playTechnoPiano(){
 	if(tpc == 0){
 	tpc++;
 	tp.currentTime = 0;
 	tp.play();
-	document.getElementById("technoPiano").style.border = "1px solid white";}
+	document.getElementById("technoPiano").style.textShadow = "5px 5px 1px blue";
+    document.getElementById("technoPiano").style.fontSize = "32px";}
 	else{
 	tpc--;
 	tp.pause();
-	document.getElementById("technoPiano").style.border = "none";}
+	document.getElementById("technoPiano").style.textShadow = "none";
+    document.getElementById("technoPiano").style.fontSize = "28px";}
     }
 	function playTechnoStrings(){
-	if(tsc == 0){
-	tsc++;
-	ts.currentTime = 0;
-	ts.play();
-	document.getElementById("technoStrings").style.border = "1px solid white";}
+	 if(tsc == 0){
+	  tsc++;
+	  ts.currentTime = 0;
+	  ts.play();
+	  document.getElementById("technoStrings").style.textShadow = "5px 5px 1px red";
+      document.getElementById("technoStrings").style.fontSize = "32px";}
 	else{
-	tsc--;
-	ts.pause();
-	document.getElementById("technoStrings").style.border = "none";}
-    }
+	  tsc--;
+	  ts.pause();
+	  document.getElementById("technoStrings").style.textShadow = "none";
+      document.getElementById("technoStrings").style.fontSize = "28px";}
+     }
 	function playHuh(){
-	huh.currentTime=0;	
+        huh.currentTime=0;	
 	huh.play();
 	}
 	
