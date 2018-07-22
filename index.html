@@ -35,43 +35,6 @@
          font-size: 20px;
          border-style: solid;
          border-width:0px 4px 0px 0px;
-        }<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Spongify</title>
-  <meta name="description" content="Spongify">
-  <meta name="author" content="Shadrach">
-  <link rel="icon" href="https://image.flaticon.com/icons/png/512/280/280790.png">		
-<!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
-<style>
-       
-	      @import url('https://fonts.googleapis.com/css?family=Roboto');
-	      html{
-         background-image:url("https://images.unsplash.com/photo-1531950769935-13a6e50e10e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d37bcb297da5e61eab45c562813dd195&auto=format&fit=crop&w=1350&q=80");
-         font-family: 'Roboto', sans-serif;
-         color: white;
-        }
-	         ul {
-         list-style-type: none;
-         margin: 0;
-         padding: 2px;
-         overflow: hidden;
-         background-color: white;
-         border-radius: 10px;
-        }
-        li {
-         float: left;
-        }
-        li a {
-         display: block;
-         color: #2A6376;
-         text-align: center;
-         padding: 14px ;
-         text-decoration: none;
-         font-size: 20px;
-         border-style: solid;
-         border-width:0px 4px 0px 0px;
         }
         li a:hover {
          background-color: #2A6376;
@@ -103,69 +66,8 @@
      
 </style>  
 </head>
-<!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 
-<body>
-<div class= "container">
-  <div class="item1">
-	<ul>
-		<li><a href="https://spongify.club">Home</a></li>
-		<li><a href="soundboard.html">Sound Board</a></li>
-		<li><a href="spongify.html">Spongify</a></li>
-		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
-	</ul>
-    </div>
-   <div class="item2">
-	<p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided 
-       by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats.
-       Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large)
-       the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. 
-       This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files 
-       could be stored on a single repository, and users would need to download nothing. 
-       </p>
-   </div>	   
-</div>
-	
-<!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<script>
-
-</script>
-
-</body>
-</html>
-
-        li a:hover {
-         background-color: #2A6376;
-         color: white;
-         border-radius:10px;
-	 transition: .5s;
-	}
-    @media only screen and (max-width: 800px) {
-    
-    }
-        p{ 
-	font-size:30px;
-	}
-        
-       .container {
-        display: grid;
-        grid-template-areas:
-       'header header header header header header'
-       'header header header header header header'
-       'menu menu menu menu menu menu';
-       grid-gap: 10px;
-       padding: 10px;
-}
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; 
-	}
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-     
-</style>  
-</head>
 <!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
 
 <body>
