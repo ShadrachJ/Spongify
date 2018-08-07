@@ -185,7 +185,7 @@ outline:none;}
             document.getElementById("trapFlute").style.fontSize = "28px";
 	}
 	else{
-	    tf.pause();
+	    tf.play();
 	    document.getElementById("trapFlute").style.textShadow = "5px 5px 1px yellow";
             document.getElementById("trapFlute").style.fontSize = "32px";
 	}
@@ -211,7 +211,7 @@ outline:none;}
             document.getElementById("technoPiano").style.fontSize = "28px";
 	}
 	else{
-	    tp.pause();
+	    tp.play();
 	    document.getElementById("technoPiano").style.textShadow = "5px 5px 1px blue";
             document.getElementById("technoPiano").style.fontSize = "32px";
 	}
@@ -219,12 +219,12 @@ outline:none;}
    function playTechnoStrings(){
 	 if(ts.currentTime != 0){
 	    ts.currentTime = 0;
-	    ts.play();
+	    ts.pause();
             document.getElementById("technoStrings").style.textShadow = "none";
             document.getElementById("technoStrings").style.fontSize = "28px";
 	   }
 	 else{
-	    ts.pause();
+	    ts.play();
 	    document.getElementById("technoStrings").style.textShadow = "5px 5px 1px red";
             document.getElementById("technoStrings").style.fontSize = "32px";
 	  }
