@@ -134,111 +134,102 @@ outline:none;}
 	var ts = new Audio("music/Electro Base.wav");
 	ts.loop=true;
 	var huh = new Audio("music/huh.wav");
-	/*
-	all of these global variables need to go. Next update will push a change to instead check if 
-	time != 0, and will execute commands correspondingly. 
-	*/
-	var ddc = 0;
-	var edc = 0;
-	var dpc = 0;
-	var tfc = 0;
-	var spc = 0;
-	var tpc = 0;
-	var tsc = 0;
+	
 	
     function playDarkDrums(){
-       if(dd.currentTime != 0){
+	    /* if time is not 0, make it zero and pause, remove styling */
+        if(dd.currentTime != 0){
 	    dd.currentTime = 0;
 	    dd.pause();
-	       document.getElementById("drums").style.textShadow = "none";
-        document.getElementById("drums").style.fontSize = "28px";
+	    document.getElementById("drums").style.textShadow = "none";
+            document.getElementById("drums").style.fontSize = "28px";
         }
-	  else{
+	    /* If time is zero, play the audio and provide visual cue*/
+        else{
 	    dd.play();
             document.getElementById("drums").style.textShadow = "5px 5px 1px fuchsia";
             document.getElementById("drums").style.fontSize = "32px";
-	    }
+	}
     }
-	function playElectroDoot(){ 
-	if(edc== 0){
-	edc++;
-	ed.currentTime = 0;
-	ed.play();
-	document.getElementById("electroDoot").style.textShadow = "5px 5px 1px orange";
-    document.getElementById("electroDoot").style.fontSize = "32px";}
+    function playElectroDoot(){ 
+	if(ed.currentTime != 0){
+	    ed.currentTime = 0;
+	    ed.pause();
+	    document.getElementById("electroDoot").style.textShadow = "none";
+            document.getElementById("electroDoot").style.fontSize = "28px";
+	}
 	else{
-	edc--;
-	ed.pause();
-	document.getElementById("electroDoot").style.textShadow = "none";
-    document.getElementById("electroDoot").style.fontSize = "28px";}
+	    ed.play();
+	    document.getElementById("electroDoot").style.textShadow = "5px 5px 1px orange";
+            document.getElementById("electroDoot").style.fontSize = "32px";
+	}
     }
-	function playDootyPiano(){ 
-	if(dpc == 0){
-	dpc++;
-	dp.currentTime = 0;
-	dp.play();
-	document.getElementById("dootyPiano").style.textShadow = "5px 5px 1px purple";
-    document.getElementById("dootyPiano").style.fontSize = "32px";}
+    function playDootyPiano(){ 
+	if(dp.currentTime != 0){
+	    dp.currentTime = 0;
+	    dp.pause();
+	    document.getElementById("dootyPiano").style.textShadow = "none";
+            document.getElementById("dootyPiano").style.fontSize = "28px";
+	}
 	else{
-	dpc--;
-	dp.pause();
-	document.getElementById("dootyPiano").style.textShadow = "none";
-    document.getElementById("dootyPiano").style.fontSize = "28px";}
-    }
-	function playTrapFlute(){ 
-	if(tfc == 0){
-	tfc++;
-	tf.currentTime = 0;
-	tf.play();
-	document.getElementById("trapFlute").style.textShadow = "5px 5px 1px yellow";
-    document.getElementById("trapFlute").style.fontSize = "32px";}
-	else{
-	tfc--;
-	tf.pause();
-	document.getElementById("trapFlute").style.textShadow = "none";
-    document.getElementById("trapFlute").style.fontSize = "28px";}
-    }
-	function playSynthPiano(){ 
-	if(spc == 0){
-	spc++;
-	sp.currentTime = 0;
-	sp.play();
-	document.getElementById("synthPiano").style.textShadow = "5px 5px 1px green";
-    document.getElementById("synthPiano").style.fontSize = "32px";}
-	else{
-	spc--;
-	sp.pause();
-	document.getElementById("synthPiano").style.textShadow = "none";
-    document.getElementById("synthPiano").style.fontSize = "28px";}
-    }
-	function playTechnoPiano(){
-	if(tpc == 0){
-	tpc++;
-	tp.currentTime = 0;
-	tp.play();
-	document.getElementById("technoPiano").style.textShadow = "5px 5px 1px blue";
-    document.getElementById("technoPiano").style.fontSize = "32px";}
-	else{
-	tpc--;
-	tp.pause();
-	document.getElementById("technoPiano").style.textShadow = "none";
-    document.getElementById("technoPiano").style.fontSize = "28px";}
-    }
-	function playTechnoStrings(){
-	 if(tsc == 0){
-	  tsc++;
-	  ts.currentTime = 0;
-	  ts.play();
-	  document.getElementById("technoStrings").style.textShadow = "5px 5px 1px red";
-      document.getElementById("technoStrings").style.fontSize = "32px";}
-	else{
-	  tsc--;
-	  ts.pause();
-	  document.getElementById("technoStrings").style.textShadow = "none";
-      document.getElementById("technoStrings").style.fontSize = "28px";}
+	    dp.play();
+	    document.getElementById("dootyPiano").style.textShadow = "5px 5px 1px purple";
+            document.getElementById("dootyPiano").style.fontSize = "32px";}
+	}
      }
-	function playHuh(){
-        huh.currentTime=0;	
+    function playTrapFlute(){ 
+	if(tf.currentTime != 0){
+	    tf.currentTime = 0;
+	    tf.pause();
+	    document.getElementById("trapFlute").style.textShadow = "none";
+            document.getElementById("trapFlute").style.fontSize = "28px";
+	}
+	else{
+	    tf.pause();
+	    document.getElementById("trapFlute").style.textShadow = "5px 5px 1px yellow";
+            document.getElementById("trapFlute").style.fontSize = "32px";
+	}
+    }
+   function playSynthPiano(){ 
+	if(sp.currentTime != 0){
+	    sp.currentTime = 0;
+	    sp.pause();
+	    document.getElementById("synthPiano").style.textShadow = "none";
+            document.getElementById("synthPiano").style.fontSize = "28px";
+	}
+	else{
+	    sp.play();
+	    document.getElementById("synthPiano").style.textShadow = "5px 5px 1px green";
+            document.getElementById("synthPiano").style.fontSize = "32px";
+	}
+    }
+   function playTechnoPiano(){
+	if(tp.currentTime != 0){
+	    tp.currentTime = 0;
+	    tp.pause();
+	    document.getElementById("technoPiano").style.textShadow = "none";
+            document.getElementById("technoPiano").style.fontSize = "28px";
+	}
+	else{
+	    tp.pause();
+	    document.getElementById("technoPiano").style.textShadow = "5px 5px 1px blue";
+            document.getElementById("technoPiano").style.fontSize = "32px";
+	}
+    }
+   function playTechnoStrings(){
+	 if(ts.currentTime != 0){
+	    ts.currentTime = 0;
+	    ts.play();
+            document.getElementById("technoStrings").style.textShadow = "none";
+            document.getElementById("technoStrings").style.fontSize = "28px";
+	   }
+	 else{
+	    ts.pause();
+	    document.getElementById("technoStrings").style.textShadow = "5px 5px 1px red";
+            document.getElementById("technoStrings").style.fontSize = "32px";
+	  }
+     }
+    function playHuh(){
 	huh.play();
 	}
 	
