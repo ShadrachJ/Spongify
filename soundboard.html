@@ -147,17 +147,17 @@ outline:none;}
 	var tsc = 0;
 	
     function playDarkDrums(){
-       if(ddc == 0){
-	    ddc++;
+       if(dd.currentTime != 0){
 	    dd.currentTime = 0;
-	    dd.play();
-        document.getElementById("drums").style.textShadow = "5px 5px 1px pink";
-        document.getElementById("drums").style.fontSize = "32px";}
-	  else{
-	    ddc--;
 	    dd.pause();
-	    document.getElementById("drums").style.textShadow = "none";
-        document.getElementById("drums").style.fontSize = "28px";}
+	       document.getElementById("drums").style.textShadow = "none";
+        document.getElementById("drums").style.fontSize = "28px";
+        }
+	  else{
+	    dd.play();
+            document.getElementById("drums").style.textShadow = "5px 5px 1px fuchsia";
+            document.getElementById("drums").style.fontSize = "32px";
+	    }
     }
 	function playElectroDoot(){ 
 	if(edc== 0){
