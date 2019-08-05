@@ -1,104 +1,43 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Spongify</title>
-  <meta name="description" content="Spongify">
-  <meta name="author" content="Shadrach">
-  <link rel="icon" href="https://image.flaticon.com/icons/png/512/280/280790.png">		
-<!-- CSS STYLING BEGINS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
-<style>
-       
-	      @import url('https://fonts.googleapis.com/css?family=Roboto');
-	      html{
-         background-image:url("https://images.unsplash.com/photo-1531950769935-13a6e50e10e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d37bcb297da5e61eab45c562813dd195&auto=format&fit=crop&w=1350&q=80");
-         font-family: 'Roboto', sans-serif;
-         color: white;
-        }
-	         ul {
-         list-style-type: none;
-         margin: 0;
-         padding: 2px;
-         overflow: hidden;
-         background-color: white;
-         border-radius: 10px;
-        }
-        li {
-         float: left;
-        }
-        li a {
-         display: block;
-         color: black;
-         text-align: center;
-         padding: 14px ;
-         text-decoration: none;
-         font-size: 20px;
-       
-         border-radius:10px;
-        }
-        li a:hover {
-         background-color: pink;
-         color: white;
-        
-	 transition: .5s;
-	}
-    @media only screen and (max-width: 800px) {
-    
-    }
-        p{ 
-	font-size:30px;
-	}
-        
-       .container {
-        display: grid;
-        grid-template-areas:
-       'header header header header header header'
-       'header header header header header header'
-       'menu menu menu menu menu menu';
-       grid-gap: 10px;
-      
-}
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-     
-</style>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="controller.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
-
-
-<!-- MAIN HTML BODY BEGINS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->	
-
 <body>
-<div class= "container">
-  <div class="item1">
-	<ul>
-		<li><a href="https://spongify.club">Home</a></li>
-		<li><a href="soundboard.html">Sound Board</a></li>
-		<li><a href="spongify.html">Spongify</a></li>
-		<li><a href="https://www.freecodecamp.com" target="_blank">freecodecamp</a></li>
-		<li><a href="https://github.com/ShadrachJ" target="_blank">My github</a></li>
-	</ul>
-    </div>
-   <div class="item2">
-	   <h1>Welcome to my playground!!</h1><br>
-	<p>Spongify started out as a java based application. The application was made for fun and had the function of taking some text provided 
-       by a user and, as they typed, outputting it into a text area to copy from. The application was also able to switch to other text-editing to fit different meme formats.
-       Included with the application were several songs from spongebob, which users could choose to play as they typed. Due to java's decision to support only the .wav file type (which itself is very large)
-       the resultant application installer (created with netbeans MAVEN/Inno/WiX) was nearly 200mb for a simple text editor. 
-       This posed a significant issue, as similar editors were many times smaller (but without music). My solution to this was to take spongify and bring it to the web, where all necessary files 
-       could be stored on a single repository, and users would need to download nothing. Ultimately, though, the decision was made to remove audio
-       from the spongify portion of the website. Instead, a soundboard was implemented in a separate section.	
-       </p>
-   </div>	   
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" id='puppyLink'>See the Puppies</a>
+  <a href="#" id='parentLink'>Meet the Parents</a>
+  <a href="#" id='contactLink'>Contact Us</a>
+  <a href="#" id='aboutLink'>About us</a>
 </div>
-	
-<!-- JAVASCRIPT FUNCTIONS BEGIN HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<script>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div class="main">
+	<div id="puppies">
+		<p>The puppies: </p>
+	</div>
+	<div id="parents">
+		 <p>The parents:</p>
+	</div>
 
-</script>
+	<div id="contact">
+		<p>Our contact:</p>
+		<a href="mailto:teacherspetlabs@comcast.net">Email us</a>
+	</div>
+
+	<div id="about">
+		<p>About us:</p>
+	</div>
+
+</div>
 
 </body>
-</html>
+</html> 
