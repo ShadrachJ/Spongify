@@ -37,8 +37,9 @@ html {
   font-size: 36px;
   margin-left: 50px;
 }
-.main *{
+.main p{
 color:#040F3D;
+font-size:2em;
 }
 .main div{
 	display:none;
