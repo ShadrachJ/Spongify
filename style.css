@@ -1,8 +1,17 @@
-html {
+body {
   font-family: 'Oswald', sans-serif;
-   background-color:#4BFFA5;
+    background-color:#4BFFA5;
 }
-
+#puppies{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+#puppies img{
+    height:300px;
+    width:300px;
+    
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -37,14 +46,12 @@ html {
   font-size: 36px;
   margin-left: 50px;
 }
-.main p{
+.main *{
 color:#040F3D;
-font-size:2em;
 }
-.main div{
+.main > div{
 	display:none;
     margin-left:35px;
-    background-color:#4BFFA5;
     font-weight:bold;
     height:600px;
     width:100%;
