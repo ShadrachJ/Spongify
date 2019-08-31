@@ -17,14 +17,14 @@
   <a href="#" id='puppyLink'>See the Puppies</a>
   <a href="#" id='parentLink'>Meet the Parents</a>
   <a href="#" id='contactLink'>Contact Us</a>
-  <a href="#" id='aboutLink'>About us</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 <div class="main">
 	<div id="puppies">
-		<p>The puppies: </p>
-                <div>
+	<p>The puppies: </p>
+            <div id="puppyDesktop">
+                <div class="puppyRow">
                     <div>
                         <img src='Images/IMG_1413.JPG' alt='Female Pupper'>
                         <br>
@@ -33,7 +33,7 @@
                         <label>Price: $850 </label>
                     </div>
                     <div>
-                        <img src='Images/IMG_1414.JPG' alt='Female Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1414.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Gypsy (Female) </label>
                         <br>
@@ -48,58 +48,55 @@
                         <label>Price: $650 </label>
                     </div>
                 </div>    
-                <div>
+                <div class="puppyRow">
                     <div>
-                        <img src='Images/IMG_1416.JPG' alt='Male Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1416.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Dexter (Male) </label>
                         <br>
                         <label>Price: $650 </label>
                     </div>
                     <div>
-                        <img src='Images/IMG_1417.JPG' alt='Male Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1417.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Bruno (Male) </label>
                         <br>
                         <label>Price: $650 </label>
                     </div> 
                     <div>
-                        <img src='Images/IMG_1418.JPG' alt='Female Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1418.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Ivy (Female) </label>
                         <br>
                         <label>Price: $850 </label>
                     </div>
                 </div>  
-                <div>
+                <div class="puppyRow">
                      <div>
-                         <img src='Images/IMG_1419.JPG' alt='Female Pupper' style="transform:rotate(90deg)">
+                         <img src='Images/IMG_1419.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
                          <br>
                         <label>Juniper (Female) </label>
                         <br>
                         <label>Price: $850 </label>
                     </div>
                     <div>
-                        <img src='Images/IMG_1420.JPG' alt='Female Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1420.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Sassy (Female) </label>
                         <br>
                         <label>Price: $850 </label>
                     </div>
                     <div>
-                        <img src='Images/IMG_1421.JPG' alt='Male Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1421.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Maverick (Male) </label>
                         <br>
                         <label>Price: $650 </label>
                     </div>
-                  
-                    
-                    
                 </div>  
-                <div>
+                <div class="puppyRow">
                      <div>
-                        <img src='Images/IMG_1422.JPG' alt='Female Pupper' style="transform:rotate(90deg)">
+                        <img src='Images/IMG_1422.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
                         <br>
                         <label>Trixie (Female) </label>
                         <br>
@@ -116,20 +113,111 @@
                        
                        
                     </div>
-                </div>  
+                </div> 
+            </div>
+            <div id="puppyMobile">
+                    <div>
+                        <img src='Images/IMG_1413.JPG' alt='Female Pupper'>
+                        <br>
+                        <label>Angel (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1414.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Gypsy (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1415.JPG' alt='Male Pupper'>
+                        <br>
+                        <label>Duke (Male) </label>
+                        <br>
+                        <label>Price: $650 </label>
+                    </div>
+                    <div>
+                        <img src='Images/IMG_1416.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Dexter (Male) </label>
+                        <br>
+                        <label>Price: $650 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1417.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Bruno (Male) </label>
+                        <br>
+                        <label>Price: $650 </label>
+                    </div> 
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1418.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Ivy (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                         <img src='Images/IMG_1419.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
+                         <br>
+                        <label>Juniper (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1420.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Sassy (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1421.JPG' alt='Male Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Maverick (Male) </label>
+                        <br>
+                        <label>Price: $650 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1422.JPG' alt='Female Pupper' style="transform:rotate(90deg);">
+                        <br>
+                        <label>Trixie (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+                    <br>
+                    <div>
+                        <img src='Images/IMG_1424.JPG' alt='Female Pupper'>
+                        <br>
+                        <label>Daisy (Female) </label>
+                        <br>
+                        <label>Price: $850 </label>
+                    </div>
+            </div>
 	</div>
+    
 	<div id="parents">
 		 <p>The parents:</p>
 	</div>
 
-	<div id="contact">
+	<div id="contact" style="padding-left:40px;">
 		<p>Our contact:</p>
 		<a href="mailto:teacherspetlabs@comcast.net">Email us</a>
+                <br>
+                <label>Call or text us: <a href="tel:574-297-6266">(574)297-6266</a></label>
+                <br>
+                <label>Call or text us: <a href="tel:574-297-6167">(574)297-6167</a></label>
 	</div>
 
-	<div id="about">
-		<p>About us:</p>
-	</div>
 
 </div>
 
