@@ -21,12 +21,7 @@ $(document).ready(function(){
         $('#contact').css('display','block');
 		closeNav();
     break;
-    case "aboutLink":
-    	console.log('about');
-        $('.main > div').css('display','none');
-        $('#about').css('display','block');
-		closeNav();
-    break;
+    
   default:
     	console.log('not listed');
 }
