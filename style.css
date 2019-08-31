@@ -2,6 +2,7 @@ body {
   font-family: 'Oswald', sans-serif;
     background-color:#4BFFA5;
 }
+
 .main p{
     font-size:20px;
 }
@@ -23,6 +24,7 @@ body {
 #puppies label{
     margin:40px 10px;
 }
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -76,5 +78,8 @@ color:#040F3D;
     }
     #puppyMobile{
         display:block;
+    }
+   #parents img{
+    width:100%;
     }
 }
